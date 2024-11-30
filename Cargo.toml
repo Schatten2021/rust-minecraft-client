@@ -1,13 +1,18 @@
 [package]
 name = "minecraft-client"
 version = "0.1.0"
+authors = ["Schatten2020"]
+description = "A library allowing for the creation of custom minecraft clients."
+repository = "https://github.com/Schatten2021/rust-minecraft-client.git"
+license-file = "LICENSE"
+categories = ["game-development"]
 edition = "2021"
 
 [dependencies]
 
-logging = { version = "1.0.0", git = "https://github.com/Schatten2021/Rust-logging-library", features = ["coloured_output"] }
+logging = { version = "1.0.0", git = "https://github.com/Schatten2021/Rust-logging-library" }
 openssl = "0.10.68"
-minecraft-net = { version = "0.1.0", path = "../minecraft-net" }
+minecraft-net = { version = "0.1.0" }
 num-bigint = "0.4.6"
 reqwest = { version = "0.12.9", features = ["json", "blocking"] }
 serde = { version = "1.0.215", features = ["derive"] }
